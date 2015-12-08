@@ -1,0 +1,177 @@
+ * {box-sizing: border-box;}
+
+ /*********************
+       MICRO CLEARFIX
+**********************/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+ /*********************
+       FONT FACE + FONT AWESOME
+**********************/
+
+
+@font-face {
+    font-family: Code Bold;
+    src: url(../fonts/code_bold-webfont.ttf);
+}
+@font-face {
+    font-family: Code Light;
+    src: url(../fonts/code_light-webfont.ttf);
+}
+
+
+.fa { 
+    font-family: 'FontAwesome' !important; 
+}
+
+.fa-arrow-circle-down {
+  font-size: 50px; 
+  color: black; 
+  display: none; 
+  text-align: center;
+}
+
+.fa-2x {
+    font-size: 1.25em;
+}
+
+.lg-img i {z-index:999;position: relative; top: -2200px; left: 40px; }
+ /*********************
+LAYOUT
+**********************/
+
+body {
+    font-family: Code Bold, Helvetica, sans-serif;
+    letter-spacing: .5px; 
+    font-size: 16px;
+}
+
+
+
+
+.survey{
+    float:left;
+    width: 100%; 
+    padding: 0 0 5% 5%;
+}
+
+.survey form {
+    width: 50%;
+}
+
+.survey .map {
+    width: 50%; 
+    float: right;
+}
+
+ /*********************
+TEXT TREATMENT
+**********************/
+
+
+#intro {width: 100%; background: rgb(153,153,153); padding: 200px 0 200px 0;}
+.txt-container {text-align: center;/*margin-top: 150px;*/}
+#intro h1 {font-size: 5em; }
+#intro h1:nth-child(1) {letter-spacing: 5px;}
+#intro h1:nth-child(2){padding-left: 20%; letter-spacing: 20px;}
+#intro span {font-family: Code Light, Helvetica, sans-serif; letter-spacing: 2px;}
+span#word-one {letter-spacing: 10px; padding-right: 2%; font-size: .3em; }
+span#word-two {letter-spacing: 19px;font-size: .3em; }
+#top {padding-right: 21%;}
+#bottom {padding-left: 20%;}
+
+.story h3 {font: 400 20px/30px 'vollkorn'}
+.wrong-answer h3 {font: 400 20px/30px 'vollkorn'; color:red;}
+
+ /*********************
+STORY IMAGES
+**********************/
+
+.lg-img img{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+
+ }
+
+
+ /*********************
+SURVEY 
+**********************/
+
+
+.map img {
+    width: 100%; 
+    height: auto;
+}
+
+.survey select{
+    display: inline;
+}
+
+.survey h2 {
+    padding-left: 1%;
+    display: inline;
+    line-height: 130%;
+}
+
+.survey form {
+    font-size: 2em;
+    padding-top: 100px;
+    float: left;
+}
+
+.styled-select {
+   overflow: hidden;
+   border: 1px solid #ccc;
+   font-family: Code Bold,Helvetica, sans-serif;
+   font-size: .75em;
+   margin-bottom: 10px;
+   padding: 10px;
+   }
+
+
+ /*********************
+SURVEY RESPONSE
+**********************/
+/*.story {margin-top: 50px;float:left; width: 50%;}*/
+.story {
+  margin-top: 30px;
+  display: none;
+}
+
+.story.expand {
+    display: block;
+}
+.wrong-answer{
+    display: none;
+}
+
+.wrong-answer.expand{
+    display: block;
+}
+
+/*#migrant-camp {background: url(../img/war-syria.jpg);
+    width: 100%;
+    height: 500px;
+}
+*/
